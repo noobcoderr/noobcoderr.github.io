@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech on NoobCoder</title>
@@ -6,10 +6,37 @@
     <description>Recent content in Tech on NoobCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 May 2021 23:11:43 +0800</lastBuildDate>
     
 	<atom:link href="http://noobcoderr.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2021年5月计划</title>
+      <link>http://noobcoderr.github.io/post/2021_05_planings/</link>
+      <pubDate>Wed, 19 May 2021 23:11:43 +0800</pubDate>
+      
+      <guid>http://noobcoderr.github.io/post/2021_05_planings/</guid>
+      <description>要总结的系列 《Python热更的原理与应用》 《Python元类的原理与应用》 要思考清楚的问题 如何整理现有系统的全部信息 如何接手/上手一个新项</description>
+    </item>
+    
+    <item>
+      <title>golang如何实现并发</title>
+      <link>http://noobcoderr.github.io/post/question_a_dat_202004121/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://noobcoderr.github.io/post/question_a_dat_202004121/</guid>
+      <description>Golang如何实现并发？ 头脑风暴 老生常谈，什么是并发？什么是并行？ 进程、线程、协程的区别，goroutine属于哪一种，为什么？ 为什么说g</description>
+    </item>
+    
+    <item>
+      <title>每日一问</title>
+      <link>http://noobcoderr.github.io/post/question_a_day_20200412/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://noobcoderr.github.io/post/question_a_day_20200412/</guid>
+      <description>每日一问 golang的channel取值问题 golang的野指针问题 golang的数据类型以及内存占用问题 golang有其基本类型以及复合类</description>
+    </item>
     
     <item>
       <title>Golang基础包-Context</title>
@@ -197,7 +224,7 @@
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>http://noobcoderr.github.io/post/mymethodology/</guid>
-      <description>我的方法论 试用期这2个月，感觉在思想上的提升大于在技术上的提升。 技术上由于处理的多为业务事项，只要完成第一项，那么后面的大多为&amp;rdquo;</description>
+      <description>我的方法论 试用期这2个月，感觉在思想上的提升大于在技术上的提升。 技术上由于处理的多为业务事项，只要完成第一项，那么后面的大多为&amp;quot;复</description>
     </item>
     
     <item>

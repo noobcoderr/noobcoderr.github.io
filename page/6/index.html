@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-	<meta name="generator" content="Hugo 0.57.2" />
+	<meta name="generator" content="Hugo 0.61.0" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -221,14 +221,154 @@
             
 
 <div class="post-preview">
-    <a href="http://noobcoderr.github.io/post/golang_range/">
+    <a href="http://noobcoderr.github.io/post/clasiccase/">
+        <h2 class="post-title">
+            软件工程之美学习笔记-软件工程经典案例
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            为什么程序员的业余项目都死了？ 我先说说我自己的吧，大学时也是有过好几个idea的，并且有一个拿来参加了全国大学生创新创业大赛，但是后面还是死
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    作者 NoobCoder 
+    <span>     创建于 </span>2019-08-25
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://noobcoderr.github.io/post/hugoblog/">
+        <h2 class="post-title">
+            使用Hugo &#43; Github Page构建自己的个人博客
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            Hugo 从入门到拉跨
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    作者 NoobCoder 
+    <span>     创建于 </span>2019-08-23
+    
+    
+    <br>修改于 2019-09-10
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://noobcoderr.github.io/post/fst-post/">
+        <h2 class="post-title">
+            Hello World
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            Hello World 欢迎 Golang相关 面向信仰编程 Golang 博客有深度，很多都是从源码讲起，需要一定的基础 飞雪无情的博客 Golang 比较基础，知识点循序渐进，适合初级go程
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    作者 NoobCoder 
+    <span>     创建于 </span>2019-08-22
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://noobcoderr.github.io/post/api_design_style/">
         <h2 class="post-title">
             
         </h2>
 	
         <div class="post-content-preview">
 	
-            title: &quot;for range 原理研究&quot; subtitle: &quot;&quot; description: &quot;值传递？？？&quot; date: 2020-01-16 author: NoobCoder image: &quot;&quot; tags: [&quot;工作&quot;] categories: [&quot;Tech&quot; ]  golang 之 for range 背景 今天在遍历一个切片结构体时，对遍历到的结构体进行更改操作，结束时发现并没有生效，于是对这一现象进行研究。
+            API设计风格之RESTful和RPC风格 最近几件事让我对API的设计风格有了更多的认识。
+1、开发谷歌支付后端时，需要调用谷歌billing库对谷歌订单进行确认操作，这样用户三天之内就无法退款了，该接口描述是If successful, this method returns an empty response body. 一开始我以为是调用成功是返回status200，如果成功则是空body，失败则是包含具体错误信息的json，但是后来发现成功是204和空body，失败是4xx系列错误和包含错误信息的jsonbody，当时还理解不了为什么这么设计。
+2、在看一门golang的视频教程的时候，视频一开始就进行API设计，其实讲的就是REST风格的设计。
+之前的疑惑，顿时有了茅塞顿开的感觉，从最开始的时候不知道什么是RESTful风格，到后懵懂的觉得应该是用各种http方法来执行请求，再到后来的基于资源的请求，让我慢慢的解开了之前的一些疑惑，并且，加深了我对HTTP状态码的理解(记得之前校招面一次看一次，过不久就忘了)，之前都是200，然后成功/错误信息全放里面。
+搜了搜REST风格的详情之后，发现还有些其他常见的API风格，如RPC，GraphQL等，而自己目前写的起始就是RPC风格的API，其实哪一种好哪一种不好，目前我也谈不上，暂且记录和总结一下自己看过的文章吧。
+RPC风格 最常见，面向过程
+REST风格 逐渐变的多了起来，面向资源
+GraphQL风格 联想一下ES的查询接口，就是这个风格，查询放body里面
+总结 其实没必要死磕哪一种风格，哪一种风格最匹配当前的业务场景，就用哪一种。
+参考文章   RESTful API 最佳实践
+  API设计中关于RPC和REST 两种风格选择的个人理解
+  浅谈三种API设计风格RPC、REST、GraphQL
+  
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    作者 NoobCoder 
+    <span>     创建于 </span>0001-01-01
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://noobcoderr.github.io/post/target/">
+        <h2 class="post-title">
+            
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            学习计划 方向 云原生 &gt; Saas &gt; docker/k8s &gt; 后端
+计划 基础向 1、计算机网络、http、https、tcp/ip
+2、数据结构：数组、链表、树、图
+3、算法：排序、搜索、
+4、设计模式
+进阶向 源码阅读
+1、golang基础包源码阅读(io map interface goroutine channels )
+GO标准语言库
+2、golang框架源码阅读：echo、docker、grpc、consul、nats
+3、go应用项目
+案例
+以上在家完成基础的计网和算法数据结构
+在公司则可以看看进阶向。
+明天出更详细计划
+比如每个项目，内知识结构，再细化安排时间。到每一天。
+参考  一年经验跳槽  
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    作者 NoobCoder 
+    <span>     创建于 </span>0001-01-01
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://noobcoderr.github.io/post/timewheel/">
+        <h2 class="post-title">
+            
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            造轮子之时间轮算法的原理与实现 背景 前不久在做一个内部错误日志告警的工具服务，具体工作是定时去es内检索项目下的错误日志，并且将返回的内容告警到顶顶群内。其中涉及到了定时任务，当时我的做法是为每个项目创建一个timer，然后按一定时间周期性的执行。这个是我能想到的 最笨的办法，大哥说我这个太耗性能，项目组多的时候，得起多少个定时器啊。并且给我介绍了时间轮的概念。
+后来调研了下该算法后，发现挺优雅的，于是写下该篇文章记录一下调研到的知识，并且用自己擅长的语言给这个算法造个轮子。我的目标是多实现使用到的工具或算法，通过造轮子来提升编程能力。(不是重复发明轮子)
+时间轮 想象一下，我们每天9点半上班，那么会定8点50的闹钟，当时间走到8点50分的时候，闹钟响，然后我们起床、穿衣、洗漱、整理、出门走到公司，我们像是把一个定时任务给插入到了8点50这一个刻度了，每天8点50，闹钟响，我们执行该刻度上的任务。
+时间轮是什么 时间轮是一种算法。用于定时器，可以非常优雅地执行定时任务。
+为什么要用时间轮 时间轮的分类 基本时间轮
+分层时间轮
+参考文章  算法-时间轮  
        
         </div>
     </a>
@@ -310,6 +450,12 @@
                 
             
                 
+                    <a href="/tags/question_a_day" title="question_a_day">
+                        question_a_day
+                    </a>
+                
+            
+                
                     <a href="/tags/todo" title="todo">
                         todo
                     </a>
@@ -384,6 +530,12 @@
                 
                     <a href="/tags/%E7%B2%BE%E8%87%B4" title="精致">
                         精致
+                    </a>
+                
+            
+                
+                    <a href="/tags/%E8%A7%84%E5%88%92" title="规划">
+                        规划
                     </a>
                 
             
@@ -556,7 +708,7 @@
                     
                 </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; NoobCoder 2020
+                    Copyright &copy; NoobCoder 2021
 
                     <br>
 

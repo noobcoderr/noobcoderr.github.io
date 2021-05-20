@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on NoobCoder</title>
@@ -6,10 +6,37 @@
     <description>Recent content in Posts on NoobCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 May 2021 23:11:43 +0800</lastBuildDate>
     
 	<atom:link href="http://noobcoderr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2021年5月计划</title>
+      <link>http://noobcoderr.github.io/post/2021_05_planings/</link>
+      <pubDate>Wed, 19 May 2021 23:11:43 +0800</pubDate>
+      
+      <guid>http://noobcoderr.github.io/post/2021_05_planings/</guid>
+      <description>要总结的系列 《Python热更的原理与应用》 《Python元类的原理与应用》 要思考清楚的问题 如何整理现有系统的全部信息 如何接手/上手一个新项</description>
+    </item>
+    
+    <item>
+      <title>golang如何实现并发</title>
+      <link>http://noobcoderr.github.io/post/question_a_dat_202004121/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://noobcoderr.github.io/post/question_a_dat_202004121/</guid>
+      <description>Golang如何实现并发？ 头脑风暴 老生常谈，什么是并发？什么是并行？ 进程、线程、协程的区别，goroutine属于哪一种，为什么？ 为什么说g</description>
+    </item>
+    
+    <item>
+      <title>每日一问</title>
+      <link>http://noobcoderr.github.io/post/question_a_day_20200412/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://noobcoderr.github.io/post/question_a_day_20200412/</guid>
+      <description>每日一问 golang的channel取值问题 golang的野指针问题 golang的数据类型以及内存占用问题 golang有其基本类型以及复合类</description>
+    </item>
     
     <item>
       <title>Golang基础包-Context</title>
@@ -197,7 +224,7 @@
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>http://noobcoderr.github.io/post/mymethodology/</guid>
-      <description>我的方法论 试用期这2个月，感觉在思想上的提升大于在技术上的提升。 技术上由于处理的多为业务事项，只要完成第一项，那么后面的大多为&amp;rdquo;</description>
+      <description>我的方法论 试用期这2个月，感觉在思想上的提升大于在技术上的提升。 技术上由于处理的多为业务事项，只要完成第一项，那么后面的大多为&amp;quot;复</description>
     </item>
     
     <item>
@@ -283,11 +310,62 @@
     
     <item>
       <title></title>
-      <link>http://noobcoderr.github.io/post/golang_range/</link>
+      <link>http://noobcoderr.github.io/post/api_design_style/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://noobcoderr.github.io/post/golang_range/</guid>
-      <description>title: &amp;quot;for range 原理研究&amp;quot; subtitle: &amp;quot;&amp;quot; description: &amp;quot;值传递？？？&amp;quot; date: 2020-01-16 author: NoobCoder image: &amp;quot;&amp;quot; tags: [&amp;quot;工作&amp;quot;] categories: [&amp;quot;Tech&amp;quot; ]  golang 之 for range 背景 今天在遍历一个切片结构体时，对遍历到的结构体进行更改操作，结束时发现并没有生效，于是对这一现象进行研究。</description>
+      <guid>http://noobcoderr.github.io/post/api_design_style/</guid>
+      <description>API设计风格之RESTful和RPC风格 最近几件事让我对API的设计风格有了更多的认识。
+1、开发谷歌支付后端时，需要调用谷歌billing库对谷歌订单进行确认操作，这样用户三天之内就无法退款了，该接口描述是If successful, this method returns an empty response body. 一开始我以为是调用成功是返回status200，如果成功则是空body，失败则是包含具体错误信息的json，但是后来发现成功是204和空body，失败是4xx系列错误和包含错误信息的jsonbody，当时还理解不了为什么这么设计。
+2、在看一门golang的视频教程的时候，视频一开始就进行API设计，其实讲的就是REST风格的设计。
+之前的疑惑，顿时有了茅塞顿开的感觉，从最开始的时候不知道什么是RESTful风格，到后懵懂的觉得应该是用各种http方法来执行请求，再到后来的基于资源的请求，让我慢慢的解开了之前的一些疑惑，并且，加深了我对HTTP状态码的理解(记得之前校招面一次看一次，过不久就忘了)，之前都是200，然后成功/错误信息全放里面。
+搜了搜REST风格的详情之后，发现还有些其他常见的API风格，如RPC，GraphQL等，而自己目前写的起始就是RPC风格的API，其实哪一种好哪一种不好，目前我也谈不上，暂且记录和总结一下自己看过的文章吧。
+RPC风格 最常见，面向过程
+REST风格 逐渐变的多了起来，面向资源
+GraphQL风格 联想一下ES的查询接口，就是这个风格，查询放body里面
+总结 其实没必要死磕哪一种风格，哪一种风格最匹配当前的业务场景，就用哪一种。
+参考文章   RESTful API 最佳实践
+  API设计中关于RPC和REST 两种风格选择的个人理解
+  浅谈三种API设计风格RPC、REST、GraphQL
+  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://noobcoderr.github.io/post/target/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://noobcoderr.github.io/post/target/</guid>
+      <description>学习计划 方向 云原生 &amp;gt; Saas &amp;gt; docker/k8s &amp;gt; 后端
+计划 基础向 1、计算机网络、http、https、tcp/ip
+2、数据结构：数组、链表、树、图
+3、算法：排序、搜索、
+4、设计模式
+进阶向 源码阅读
+1、golang基础包源码阅读(io map interface goroutine channels )
+GO标准语言库
+2、golang框架源码阅读：echo、docker、grpc、consul、nats
+3、go应用项目
+案例
+以上在家完成基础的计网和算法数据结构
+在公司则可以看看进阶向。
+明天出更详细计划
+比如每个项目，内知识结构，再细化安排时间。到每一天。
+参考  一年经验跳槽  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://noobcoderr.github.io/post/timewheel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://noobcoderr.github.io/post/timewheel/</guid>
+      <description>造轮子之时间轮算法的原理与实现 背景 前不久在做一个内部错误日志告警的工具服务，具体工作是定时去es内检索项目下的错误日志，并且将返回的内容告警到顶顶群内。其中涉及到了定时任务，当时我的做法是为每个项目创建一个timer，然后按一定时间周期性的执行。这个是我能想到的 最笨的办法，大哥说我这个太耗性能，项目组多的时候，得起多少个定时器啊。并且给我介绍了时间轮的概念。
+后来调研了下该算法后，发现挺优雅的，于是写下该篇文章记录一下调研到的知识，并且用自己擅长的语言给这个算法造个轮子。我的目标是多实现使用到的工具或算法，通过造轮子来提升编程能力。(不是重复发明轮子)
+时间轮 想象一下，我们每天9点半上班，那么会定8点50的闹钟，当时间走到8点50分的时候，闹钟响，然后我们起床、穿衣、洗漱、整理、出门走到公司，我们像是把一个定时任务给插入到了8点50这一个刻度了，每天8点50，闹钟响，我们执行该刻度上的任务。
+时间轮是什么 时间轮是一种算法。用于定时器，可以非常优雅地执行定时任务。
+为什么要用时间轮 时间轮的分类 基本时间轮
+分层时间轮
+参考文章  算法-时间轮  </description>
     </item>
     
   </channel>

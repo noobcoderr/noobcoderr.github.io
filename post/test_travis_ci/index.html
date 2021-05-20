@@ -252,41 +252,23 @@
                 post-container">
 
                 
-                
-
-<h2 id="hugo博客使用持续集成工具travis-ci">hugo博客使用持续集成工具travis-ci</h2>
-
+                <h2 id="hugotravis-ci">hugo博客使用持续集成工具travis-ci</h2>
 <p>遇到的几个坑</p>
-
 <p>1、 global:</p>
-
-<p>​           Github Pages</p>
-
-<p>​               GH_REF: github.com/noobcoderr/noobcoderr.github.io.git</p>
-
-<p>​       GH_REF 后的链接加了个https，导致ci时没有access</p>
-
+<p>​			Github Pages</p>
+<p>​				GH_REF: github.com/noobcoderr/noobcoderr.github.io.git</p>
+<p>​		GH_REF 后的链接加了个https，导致ci时没有access</p>
 <p>2、 travis ci `mkdir&rsquo;: File exists @ dir_s_mkdir - /tmp/d20190901-4695-w65n55/work (Errno::EEXIST)</p>
-
-<p>​   问题所在 on:
-​               branch: blog # 博客源码的分支</p>
-
-<p>​   branch后填博客源码所在库，别填master之类的。</p>
-
+<p>​	问题所在 on:
+​    			branch: blog # 博客源码的分支</p>
+<p>​	branch后填博客源码所在库，别填master之类的。</p>
 <p>3、CI显示没出错，部署成功，但是github.io库里根本每显示更新了文件，blog库也没更新。</p>
-
-<p>​   暂无解决，应该是之前设置了生成到docs，但是默认的又是生成到public文件夹下。</p>
-
-<p>​   是ci时，没有用户名密码，无法获取github.io库的commit、push权限，所以不成功</p>
-
+<p>​	暂无解决，应该是之前设置了生成到docs，但是默认的又是生成到public文件夹下。</p>
+<p>​	是ci时，没有用户名密码，无法获取github.io库的commit、push权限，所以不成功</p>
 <p>疑问：</p>
-
 <p>1、既然是要自动化部署，那么再本地写文章时要 hugo new post/wenzhang.md 这样嘛？好像是。</p>
-
 <p>参考文章：</p>
-
 <p><a href="https://mogeko.me/2018/028/">使用 Travis CI 自动部署 Hugo 博客</a></p>
-
 <p><a href="https://github.com/chenwangji/blog/issues/1">第一个坑</a></p>
 
 
@@ -386,6 +368,12 @@
                         
                         
                         
+                        <a href="/tags/question_a_day" title="question_a_day">
+                            question_a_day
+                        </a>
+                        
+                        
+                        
                         <a href="/tags/todo" title="todo">
                             todo
                         </a>
@@ -460,6 +448,12 @@
                         
                         <a href="/tags/%E7%B2%BE%E8%87%B4" title="精致">
                             精致
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E8%A7%84%E5%88%92" title="规划">
+                            规划
                         </a>
                         
                         
@@ -564,7 +558,7 @@
                     
                 </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; NoobCoder 2020
+                    Copyright &copy; NoobCoder 2021
 
                     <br>
 
