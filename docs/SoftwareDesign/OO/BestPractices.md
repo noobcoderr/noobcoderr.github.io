@@ -1,0 +1,22 @@
+# 面向对象编程最佳实践
+
+1、BBS论坛系统(jsp+sql)
+2、ERP管理系统(jsp+servlet)
+3、OA办公自动化管理系统(Struts1.2+Hibernate3.0+Spring2+DWR)
+4、博客系统(struts+hibernate+spring)
+5、车辆管理系统(struts+hibernate+spring+oracle)
+6、家庭理财系统(java+applet)
+7、教材订购系统(jsp+servlet+mysql)
+8、酒店管理系统(jsp+servlet+mysql)
+9、乐趣大型购物系统 v1.1(jsp+servlet+mysql)
+10、聊天系统(java+applet)
+11、内容管理系统(hibernate3+struts2+spring2)
+12、图书管理系统(struts+hibernate+spring)
+13、网上订餐系统(struts+spring+hibernate)
+14、网上书城系统(Struts+Hibernate+Mysql)
+15、网上书店系统(论文+jsp源程序)
+16、项目申报系统(Struts2+Spring+Hibernate+Jsp+Mysql5)
+17、学生成绩管理系统(SSH+MYSQL)
+18、阳光酒店管理系统(javaapplet+SQL)
+19、移动ssh项目(struts+spring+hibernate+oracle)
+20、音乐网站(JSP+SERVLET）
