@@ -1,3 +1,1 @@
-- 社区
-  - [团队](team/members.md)
-  - [问题反馈](team/feedback.md)
+- [个人博客](www.baidu.com)

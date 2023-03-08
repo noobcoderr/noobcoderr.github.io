@@ -170,6 +170,16 @@ conventional-changelog，需要使用npm安装
   - 计算倒数第二个tag的行数 num=$(($tags_num-1))  
   
   - 取倒数第二行tag内容 latest_tag=`sed -n $num'p' tags.log` 
+
+**12、工作开发时，公司的git和自己的git账号进行区分**
+  这里主要需要有两点进行区分
+  - 公私钥的区分。分别生成不同的公私钥，在内网和github后台分别配置即可，我个人是直接使用的同一套公私钥
+  - 提交username和email的区分。在私人仓库时，配置以下即可，否则使用公司的email提交到个人仓库，那么个人首页的活跃就不会被统计。
+    ```markdown
+    git config --local user.name xxx
+    git config --local user.email xxx@xxx.com
+    ```
+    github不支持账号密码进行验证push，所以记得自己创建个accesstoken，并在提交时使用该accesstoken作为密码
   
 
 
