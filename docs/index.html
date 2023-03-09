@@ -10,16 +10,16 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
 
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+
     <!-- mermaid theme -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
   <!-- mermaid -->
   <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+
+
 </head>
 <body>
   <div id="app">Loading ...</div>
-
   <script>
     window.$docsify = {
       loadSidebar: true,
@@ -84,6 +84,12 @@
         },
         pathNamespaces: ['/zh', '/en']
       },
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      }
     }
   </script>
 
@@ -113,6 +119,20 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml-doc.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'c279f5088459d987985f',
+      clientSecret: 'af5b51bc1ea3e464dcf326620349101370418216',
+      repo: 'noobcoderr.github.io',
+      owner: 'noobcoderr',
+      admin: ['noobcoderr'],
+      id: location.pathname,
+      distractionFreeMode: false
+    })
+  </script>
 
 </body>
 </html>
