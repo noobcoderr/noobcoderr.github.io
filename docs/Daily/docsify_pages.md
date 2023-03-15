@@ -132,9 +132,9 @@ distractionFreeMode: false
 - 使用`md5(location.href)`, 这样其实也可以，基于完整url的散列值基本不会重复，就是仓库里的labels不直观，因为散列值就只是一些随机字符串
 
 - 使用`location.pathname`，其实这不适合docsify建立的项目，因为其生成的文章url为`host/#/path`中间带一个`#`，取location.pathname取到的就是一个`/`，那么所有文章的label都一样了
+但是使用hugo之类建立的文章好像就没有这个问题，可以使用该值。
 
 经过我的测试，最后使用`location.href.split('#')[1]`作为id配置项，可以取到正常的pathname，也可以作为页面的唯一标识
-
 
 
 
@@ -142,37 +142,81 @@ distractionFreeMode: false
 
 作为一个Python服务端，看了看Gitalk的源码，还是可以看出一些表面的意思的，源码文件为[gitalk.jsx](https://github.com/gitalk/gitalk/blob/master/src/gitalk.jsx)
 
-gitalk查询与创建issue的原理
+关键的一些源码粘贴如下：
+```javascript
+class GitalkComponent extends Component {
+  state = {
+    user: null,
+    issue: null,
+    comments: [],
+    localComments: [],
+    comment: '',
+    isNoInit: false,
+    isIniting: true,
+    isCreating: false,
+    isOccurError: false,
+    errorMsg: '',
+  }
+  constructor (props) {
+    super(props)
+    this.options = Object.assign({}, {
+      id: window.location.href,
+      number: -1,
+      labels: ['Gitalk'],
+      title: window.document.title,
+      body: '', // window.location.href + header.meta[description]
+      url: window.location.href,
+    }, props.options)
+  }
+}
+  render () {
+    const { isIniting, isNoInit, isOccurError, errorMsg, isInputFocused } = this.state
+    return (
+      <div className={`gt-container${isInputFocused ? ' gt-input-focused' : ''}`}>
+        {isIniting && this.initing()}
+        {!isIniting && (isNoInit ? [] : [this.meta()])}
+        {isOccurError && <div className="gt-error">{errorMsg}</div>}
+        {!isIniting && (isNoInit ? [this.noInit()] : [this.header(),this.comments()])}
+      </div>
+    )
+  }
+}
 
-gitalk创建issue时:
-- 会以当前页面的`title`作为issue标题
-- 会创建2个`label`，一个为`Gitalk`，用于标识该issue是由Gitalk自动生成的, 一个则是使用页面路由(默认`location.href`)生成，用于标记该文章
-- 会以该篇文章的完整url作为issue的内容，也可以说是首条评论
+module.exports = GitalkComponent
+```
 
-!> github的label有长度为50的限制，超过50的会被截取，只保留前50长度的数据
+分析gitalk源码
+入口应该为`render()`
+该方法会返回一个`gitalkgt-container`容器，这个容器就是包含gitalk的模块，执行流程为  
+- <第一块> 展示初始化状态，初始化时展示Gitalk 加载中 ...  
+- <第二块> 在初始化结束的情况下，如果成功则执行`this.meta()`, 该部分获取各种元数据并展示 
+- <第三块> 在发生错误的时候在`gt-error`模块内展示错误信息  
+- <第四块> 在初始化结束的情况下，如果成功则执行`header`方法和`comments`方法，不成功则执行`this.noInit`方法  
 
-问题就出在`location.href` 之前使用hugo建立静态博客时使用gitalk时，生成的文章地址为`https://host/post/golang_context/`
+**meta方法**
 
-那么默认的`location.href`就是`https://host/post/golang_context/`. 但是github的label有长度为50的限制，一旦文件名长一点，那么就会存在同一个
+只做数据展示，不做数据获取，登录时展示评论数量，以及一些弹出式菜单，如注销，按时间正序/倒序排序，gitalk版本等等，未登录时展示登录按钮等
 
-文件夹下的所有文件的label是都是一样的，即例如`https://host/post/文件夹/文章`. `https://host/post/文件夹/`就已经长度为50了，那么后面的就会被截取
+**header和comments方法**
 
-成一样的，这样就做不到区分不同的文章了，所以就会出现同一个文件夹下的文章的评论是相同的了, 因为都在同一个issue下`https://xxx.github.io/` 就
+展示已有的数据，没有获取数据操作
 
-占据22位的长度了. 这块可以优化一下，所以gitalk的配置里id可以单独配置
+**noInit方法**
 
-我看网上的docify建站的id都配置为location.pathname，这里其实是有问题的， 因为使用docsify写的文章的完整路径是
+该方法这个方法会拿到文章对应issue的所有评论
 
-`https://xxx.github.io/#/文件夹名/文件名` ,这种情况下，url里带一个特殊字符#，所以取到的location.pathname就是一个`/`
+- 最开始是展示未找到相关的issue进行评论，请联系用户进行创建
+- 如果未登录github的话，展示按钮进行登录，进行Oauth授权，获取用户信息
+- 如果当前登录github用户是此仓库管理员的话，那么展示创建issue按钮，调用handleIssueCreate方法
+  - **handleIssueCreate方法**: 会调用`createIssue`方法创建issue，创建完成后，会调用`getComments`方法获取当前issue的所有评论
+  - **createIssue方法**: 创建issue。在配置的owner用户下的repo仓库里，以页面的title为issue的标题，以Gitalk和id为issue的labels，以页面完整的url作为issue的内容，即首条评论
+  - **getComments方法**：获取issue的所有评论，如果未登录，则调用getCommentsV3方法，如果登录了，则调用graphql的getComments方法
+  - **getCommentsV3方法**：获取issue的评论，首先按照issue_id进行取，如果取到就展示到页面上，如果未取到则安labels进行取
+  - **graphql的getComments方法**：获取指定issue_id的所有评论
+  - **handleLogin方法**：会将所有评论放在浏览器的本地存储里
 
-导致所有的label都是`/`
-
-网上的建议是使用`location.href`进行md5，然后再用md5值作为label，这种方法可以，但是产生的label就比较意义不明了，我没有使用
-
-我选择了一种其他的方式 `location.href.split('#')[0]`， 就是按`#`截取完整的url，然后取后半部分，这样就取到了对应的路径了`/文件夹名/文件名`
-目前基本解决了创建的issue不匹配以及多文章共用评论的问题
-
-
+从源码可见`GitalkComponent`维护了很多数据，每次进入新页面都会调用render()方法，但是上一次的数据有没有被清理我不太清楚，理论上应该会被清理，
+但是上面提到的评论混乱确实是感觉有缓存，这点需要后面咨询一下搞前端的同事确认下。
 
 ### 学习到的javascript知识
 - 三元表达式  bool ? A : B  ，如果bool为真，则执行A，bool为假，则执行B
