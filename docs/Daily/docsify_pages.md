@@ -59,7 +59,7 @@ distractionFreeMode: false
 2. 访问以页面标题为`title`，`Gitalk`和路由`path`为`label`为查询条件，查询符合条件的`issue`信息，此时为精确查询
 3. 请求`/graphql`接口获取`issue`和`issue`的评论信息，查询条件为第二步返回的`issue_id`
 
-![docsify_pages_01.png](/statics/imgs/docsify_pages_01.png)
+![docsify_pages_01.png](../../statics/imgs/docsify_pages_01.png)
 
 当点击一篇其他文章的时候，也会执行上述的三次网络请求
 1. 访问`https://api.github.com/user`获取当前github用户信息
