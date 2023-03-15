@@ -12,7 +12,7 @@
   - [Docker学习](CloudNative/Docker/README.md)
   - [K8S](CloudNative/K8s/README.md)
   - [rpc](CloudNative/rpc/rpc.md)
-- [每日思考](Daily/)
+- [每日思考](Daily/README.md)
   - [docsify建站](Daily/docsify_pages.md)
 - [数据库](Database/README.md)
   - [MongoDB](Database/MongoDB/README.md)
