@@ -88,7 +88,11 @@ todo
 todo
 
 ### 代码分发与打包
-todo
+
+egg打包参考   
+https://www.cnblogs.com/bonelee/p/11125173.html
+
+https://blog.csdn.net/nirendao/article/details/70667135
 
 ### 服务的部署与发布
 todo

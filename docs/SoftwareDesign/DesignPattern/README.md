@@ -2,6 +2,9 @@
 
 系统性地学习下设计模式
 
+怎么系统地学习一个模式？
+	互联网搜来搜去看完都是一知半解，直接找论文来读，这样比较系统
+
 ## 参考
 
 [按UML类图来解读设计模式](https://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html)

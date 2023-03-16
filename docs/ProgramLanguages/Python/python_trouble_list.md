@@ -104,3 +104,8 @@ twisted
 
 彻底弄明白partial()
 	https://zhuanlan.zhihu.com/p/47124891
+
+python的类方法、静态方法、实例方法，什么时候用什么？
+classmethod
+staticmethod
+

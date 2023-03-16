@@ -15,6 +15,13 @@ mongodb内存储
 
 不混乱靠的是
 
+简历里写着参与了那么多项目，那么项目里面的疑难点是什么呢？有哪些关键技术？有什么闪光点？
+
+
+2. 关键词：基本功，职业规划
+
+所以，此时面试官会着重考察你的基本功，比如需求分析能力、数据分析能力、执行力、沟通能力等。这时候面试者也要尽量避免去扯一些诸如“战略”之类的东西，这样很容易把自己带沟里。
+
 ## 参考
 [社招](https://github.com/aylei/interview)
 
@@ -25,3 +32,5 @@ mongodb内存储
 [面试-star法则](http://www.jinwenhr.com/article/index.php?c=show&id=58)
 
 [并性能高并发面试](https://www.cnblogs.com/heartstage/p/3415584.html)
+
+[面试宝典](https://www.sohu.com/a/529243918_114819)

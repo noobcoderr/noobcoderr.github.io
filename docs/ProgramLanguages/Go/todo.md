@@ -1,5 +1,18 @@
 # Go TODO
 
+游戏的其他服务是可以用go比如匹配服务，商城服务，交易服务，聊天服务等。至于即时对战类服务已经有引擎自带都是c/cpp，，适合高并发
+
+2、golang sdk的api设计，options和builder哪个更方便呢 
+
+例如
+NewClient(WithIp("1.2.3.4"),WithPort(80))
+和
+NewBuilder().Ip("1.2.3.4").Port(80).Build()
+哪个更方便呢
+
+go为什么要把业务模块放在internal模块下面：
+	https://juejin.cn/post/6950094090969022472
+
 # 参考
 [在Go中是如何对epoll进行封装的](https://zhuanlan.zhihu.com/p/484458312)
 

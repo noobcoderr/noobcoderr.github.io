@@ -32,6 +32,9 @@
 5.找一个模块，深入研究  
 6.先从 issue 开始  
 
+参与rosedb：1、新增危险命令的配置，
+
+
 [ 分享 GitHub 上有趣、入门级的开源项目](https://github.com/521xueweihan/HelloGitHub)
 
 [如何参与开源项目](https://www.v2ex.com/t/847738#reply4)

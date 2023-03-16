@@ -8,6 +8,9 @@
 ## 线上问题定位
 [MongoDB数据量大于2亿后遇到的问题 及原因分析](https://piaosanlang.gitbooks.io/mongodb/content/03day/shu-ju-liang-da-yu-dao-de-wen-ti.html)
 
+mongodb慢查询怎么解决
+
+
 ## 参考
 [『MongoDB』MongoDB高可用部署架构——分片集群篇（Sharding）](https://developer.aliyun.com/article/879873)
 
