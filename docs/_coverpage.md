@@ -1,7 +1,6 @@
-# 请立即查看TODOLIST开始学习
+# 江边鸟的个人知识体系Wiki
 
-- 所谓迷茫就是才华配不上梦想，大事干不了，小事不肯干，不想做手边的事，只想做天边的事
+## 独学而无友，则孤陋寡闻
 
-[TODO LISTS](TODO/README.md)
-[Get Started](README.md)
-
+[亟待解决](TODO/README.md)
+[从头开始](README.md)
