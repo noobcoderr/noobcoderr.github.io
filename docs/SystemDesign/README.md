@@ -37,19 +37,14 @@
 
 [《设计数据密集型应用》](https://vonng.gitbooks.io/ddia-cn/content/)
 
-百亿规模API网关服务Shepherd的设计与实现
-	https://tech.meituan.com/2021/05/20/shepherd-api-gateway.html
+[百亿规模API网关服务Shepherd的设计与实现](https://tech.meituan.com/2021/05/20/shepherd-api-gateway.html)
 
-谈谈对多租户系统的简要理解
-	https://www.163.com/dy/article/G11QNFPG0511805E.html
+[谈谈对多租户系统的简要理解](https://www.163.com/dy/article/G11QNFPG0511805E.html)
 
-如何处理查询为空
-	https://juejin.cn/post/6979915555939713054
+[如何处理查询为空](https://juejin.cn/post/6979915555939713054)
 
-一个极简、易用的业务灰度分流方案
-	https://toutiao.io/posts/sjdciny/preview
+[一个极简、易用的业务灰度分流方案](https://toutiao.io/posts/sjdciny/preview)
 
-对常见高并发一些业务场景的理解
-	https://www.jianshu.com/p/99d93e618377
+[对常见高并发一些业务场景的理解](https://www.jianshu.com/p/99d93e618377)
 
 

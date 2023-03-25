@@ -79,10 +79,8 @@ c10k解决方案
 灵活使用多进程和多线程和多协程
 
 
-IO多路复用是什么意思
-https://www.zhihu.com/question/32163005/answer/1802684879
+[IO多路复用是什么意思](https://www.zhihu.com/question/32163005/answer/1802684879)
 
-为什么事件驱动服务器这么火
-	https://gist.github.com/jcouyang/9914091
+[为什么事件驱动服务器这么火](https://gist.github.com/jcouyang/9914091)
 
 

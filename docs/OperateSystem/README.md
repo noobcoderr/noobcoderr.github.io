@@ -10,10 +10,10 @@
 
 [CSAPP 深入理解计算机系统课程视频](https://www.bilibili.com/video/BV1iW411d7hd?from=search&seid=11952614108851410743)
 
-聊聊C10K问题及解决方案
-	https://cloud.tencent.com/developer/article/1031629
-	https://www.jianshu.com/p/ba7fa25d3590
-为什么多线程可以利用到多核
-	https://blog.csdn.net/cpxsxn/article/details/106101531
-IO模型的演进
-	https://waylau.gitbooks.io/essential-java/content/docs/io-model.html
+[聊聊C10K问题及解决方案1](https://cloud.tencent.com/developer/article/1031629)
+
+[聊聊C10K问题及解决方案2](https://www.jianshu.com/p/ba7fa25d3590)
+
+[什么多线程可以利用到多核](https://blog.csdn.net/cpxsxn/article/details/106101531)
+
+[IO模型的演进](https://waylau.gitbooks.io/essential-java/content/docs/io-model.html)

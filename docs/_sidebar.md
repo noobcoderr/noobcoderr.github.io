@@ -1,7 +1,5 @@
 - [数据结构与算法分析](AlgorithmDatastruct/README.md)
 - [优秀工具/博客/站点](Awesome/README.md)
-  - [优质开源工具](Awesome/great_tools.md)
-  - [优质博客站点](Awesome/greate_blogs.md)
 - [职业生涯](Career/README.md)
   - [职业生涯规划](Career/career_plan.md)
   - [述职](Career/work_report.md)
