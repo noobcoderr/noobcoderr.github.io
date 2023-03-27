@@ -1,5 +1,7 @@
 # Python
 
+[学习python的最好文档-官方标准库](https://docs.python.org/zh-cn/3.9/library/index.html)
+
 [Python 代码热更新实现](https://toutiao.io/posts/edo9eh/preview)
 
 [热更机制介绍](https://www.zhihu.com/question/29575814)
