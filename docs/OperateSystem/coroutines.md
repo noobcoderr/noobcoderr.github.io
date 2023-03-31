@@ -166,7 +166,8 @@ func main() {
   
 ## 参考文章
 [《Design of a Separable Transition-Diagram Compiler》](https://www.melconway.com/Home/pdf/compiler.pdf), 协程出处论文    
-[当谈论协程时，我们在谈论什么](https://www.developers.pub/article/1125270), 从底层实现说明    
-[简单谈谈协程](https://juejin.cn/post/6961414532715511839), 谈到了stackless    
+[当谈论协程时，我们在谈论什么](https://www.developers.pub/article/1125270), 从底层实现说明  
+[编程珠玑番外篇-Q 协程的历史，现在和未来](https://blog.youxu.info/2014/12/04/coroutine/), 讲清了协程产生背景    
+[简单谈谈协程](https://juejin.cn/post/6961414532715511839), 谈到了stackless协程      
 [图解｜揭开协程的神秘面纱](https://zhuanlan.zhihu.com/p/515916638), 图解的形式清晰明了    
 [WIKI-协程](https://zh.wikipedia.org/zh-sg/%E5%8D%8F%E7%A8%8B)
