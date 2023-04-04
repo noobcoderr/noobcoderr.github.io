@@ -13,6 +13,9 @@ Flask
 爬虫
 Scrapy
 
+一个youtube网站视频下载开源工具: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+
+
 
 ## 参考
 [值得看的python源码](http://codeclub.bid/wiki/index.html?file=010-Python/093-%E5%80%BC%E5%BE%97%E7%9C%8B%E7%9A%84Python%E5%BC%80%E6%BA%90%E4%BB%A3%E7%A0%81)
