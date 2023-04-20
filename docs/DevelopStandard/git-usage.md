@@ -139,6 +139,8 @@ conventional-changelog，需要使用npm安装
 
 再重置版本 `git reset --hard origin/feature/当前分支`
 
+本地拉取远程分支并设置对应的本地分支 `git fetch origin 远程分支名x:本地分支名x`
+
 **9、从某个tag分支上迁出新的分支进行开发**  
 
 部分项目组可能未使用最新的tag进行研发，而是基于之前某个稳定版，此时添加紧急 特性时，需要从项目组使用的tag上迁出分支  
