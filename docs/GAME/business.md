@@ -1,4 +1,7 @@
 # 游戏业务相关
+大厂也在使用python写game服务端，为什么？
+因为可以热更？不停服重启？python热更机制
+
 
 # 业务风控
 
@@ -64,3 +67,10 @@ https://www.cnblogs.com/yx88/p/11285639.html
 
 推送原理
 	https://www.jianshu.com/p/14ba5adc2ac4
+
+如何测试支付系统？
+23期python测开毕业设计
+https://ceshiren.com/t/topic/23062
+
+求助：接口自动化中第三方支付的如何实现？或者说绕过？
+http://114.118.12.69/topics/30524

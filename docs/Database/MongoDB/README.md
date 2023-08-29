@@ -8,7 +8,7 @@
 ## 线上问题定位
 [MongoDB数据量大于2亿后遇到的问题 及原因分析](https://piaosanlang.gitbooks.io/mongodb/content/03day/shu-ju-liang-da-yu-dao-de-wen-ti.html)
 
-mongodb慢查询怎么解决
+[mongodb慢查询怎么解决](http://xstarcd.github.io/wiki/sysadmin/mongodb_slowlog.html)
 
 
 ## 参考

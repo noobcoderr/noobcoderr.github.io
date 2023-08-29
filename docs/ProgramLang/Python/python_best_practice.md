@@ -99,7 +99,6 @@ todo
 
 
 ## 参考
-[Python 项目工程化开发指南](https://pyloong.github.io/pythonic-project-guidelines/guidelines/project_management/project_structure/)
-
-
+[Python 项目工程化开发指南](https://pyloong.github.io/pythonic-project-guidelines/guidelines/project_management/project_structure/)  
+[python最佳实践指南](https://learnku.com/docs/python-guide/2018/logging/3265)
 

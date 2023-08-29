@@ -10,3 +10,11 @@
 站在不同的视角，认知不同，行为逻辑也不同，带来的价值也不同。
 
 我意识到我需要不断提高自己的认知，但是我现在却无从下手，然后现在有一种焦虑的感觉。
+
+
+[《程序员的认知心得》](https://renzhi.shaogefenhao.com/)
+
+[入行 14 年，我还是觉得编程很难](https://www.piglei.com/articles/programming-is-still-hard-after-14-years/)
+
+[建造并进化你的机器](https://hagerhu.com/post/build-and-evolve-your-machine/)
+

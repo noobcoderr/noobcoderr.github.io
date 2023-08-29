@@ -3,6 +3,8 @@
 python cookbook
 流畅的python
 
+[《Python工匠》强推！](https://github.com/piglei/one-python-craftsman)
+
 [Python CookBook](https://python3-cookbook.readthedocs.io/zh_CN/latest/preface.html)
 
 [Python源码赏析](https://www.imooc.com/read/payarticleelitecomment?column_id=76)

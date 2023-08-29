@@ -18,6 +18,7 @@
 - [数据库](Database/README.md)
   - [MongoDB](Database/MongoDB/README.md)
   - [Redis](Database/Redis/README.md)
+    - [Redis执行Lua脚本](Database/Redis/lua_script.md)
 - [开发流程规范](DevelopStandard/README.md)
   - [Git使用规范](DevelopStandard/git-usage.md)
   - [软件生命周期](DevelopStandard/software_life.md)

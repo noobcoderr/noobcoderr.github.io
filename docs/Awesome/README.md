@@ -11,6 +11,22 @@
 
 ## 技术博客类
 
+## AI工具or网站类
+
+### ChatGPT-Next-Web
+一键免费部署你的私人 ChatGPT 网页应用。
+地址: https://github.com/Yidadaa/ChatGPT-Next-Web/blob/main/README_CN.md
+
+### ChatGPT-Midjourney
+一键拥有你自己的 ChatGPT+Midjourney 网页服务
+地址:https://github.com/Licoy/ChatGPT-Midjourney
+
+### awesome-free-chatgpt 
+免费的 ChatGPT 镜像网站列表，持续更新。
+地址: https://github.com/LiLittleCat/awesome-free-chatgpt
+
+
+
 ### Go语言相关
 
 | 名称   | 地址  | 描述  |

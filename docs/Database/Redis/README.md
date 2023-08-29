@@ -30,5 +30,8 @@ Redis的性能瓶颈在IO上
 使用 Memcached 作为本地缓存，使用 Redis 作为分布式缓存
 
 
+
+[大Key问题](https://www.51cto.com/article/701990.html)
+
 ## 参考文章
 [Redis部署架构](https://www.lanmper.cn/redis/t9372)
